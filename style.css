@@ -1025,3 +1025,10 @@
   background-color: #e0bcf6; /* Purple */
   z-index: -1;
 }
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
