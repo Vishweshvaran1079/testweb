@@ -1618,41 +1618,54 @@ body {
     .navbar-wrapper {
       display: flex;
       justify-content: space-between;
-      align-items: center; /* THIS aligns logo + icon vertically */
-      padding: 12px 20px;  /* adjust padding if needed */
+      align-items: center;
+      padding: 10px 16px;
+      height: 60px; /* optional: control height */
+    }
+  
+    .menu-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+    }
+  
+    .menu-icon img {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+      display: block;
     }
   
     .logo {
       font-size: 20px;
       font-weight: 700;
-      color: white;
+      line-height: 1;
       display: flex;
-      align-items: center; /* vertically center logo text */
+      align-items: center;
+      height: 100%;
     }
-  
-    .menu-icon {
-      display: block;
-      width: 28px;
-      height: 28px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;  /* vertically center image */
-    }
-  
+  }
+  @media (max-width: 768px) {
     .menu-icon img {
-      width: 100%;
-      height: auto;
+      width: 50px;   /* Adjust size as needed */
+      height: 50px;
+      object-fit: contain;
       display: block;
     }
+  
     .menu-icon {
       width: 40px;
       height: 40px;
-    }
-  
-    .menu-icon img {
-      width: 100%;
-      height: auto;
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
-  
+  .menu-icon img {
+    padding: 0;
+    margin: 0;
+  }
+    
