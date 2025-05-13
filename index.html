@@ -65,7 +65,7 @@
   </section>
 <section class="discover-section">
     <div class="discover-content">
-      <div class="image-content image-top">
+      <div class="image-content image-top discover-shape-wrapper">
         <img src="img/discover.png" alt="Shape Art" class="discover-shape" />
       </div>
       <div class="text-content">
@@ -78,7 +78,7 @@
           </span>
           for your next great projects
         </h1>          
-        <p>
+        <p class="section-description discover-paragraph">
           Scelerisque auctor dolor diam tortor, tamet faucibus non interdum nunc.
           Ultrices non sapien elit gravida ac, rutrum molestie adipiscing lacinia.
         </p>
@@ -115,7 +115,9 @@
       </div>
       <div class="text-content">
         <span class="section-label">CUSTOMERS</span>
-        <h1 class="section-heading">
+      
+        <!-- Desktop version: hidden on mobile -->
+        <h1 class="section-heading desktop-only">
           <span class="highlight-purple">Target</span>
           <span class="highlight-image">
             <img src="img/rectangle.png" alt="" class="highlight-bg1" />
@@ -123,12 +125,25 @@
           </span>stomers
           with <br />our powerful AI kit
         </h1>
+      
+        <!-- Mobile version: only shown on mobile -->
+        <p class="ai-kit-text mobile-only">
+          <span class="highlight-purple">Target</span>
+          <span class="highlight-image">
+            <img src="img/rectangle.png" alt="" class="highlight-bg1" />
+            <span class="highlight-text">cu</span>
+          </span>stomers<br>
+          with our powerful <br>AI kit
+        </p>
+      
         <p class="section-description">
           Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. 
           Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.
         </p>
+      
         <a href="Targeting.html" class="cta-link">How Targeting Customers Works ➔</a>
       </div>
+      
       <div class="image-content">
         <div class="rotating-squares" aria-hidden="true"></div>
       </div>
@@ -156,15 +171,19 @@
     <div class="container">
       <div class="text-content">
         <span class="section-label">TESTIMONIALS</span>
-        <h1 class="section-heading"><span class="underline">Bigapp</span> got to <br />the next level</h1>
+        <h1 class="section-heading desktop-only"><span class="underline">Bigapp</span> got to <br />the next level</h1>
+        <h1 class="section-heading mobile-only">
+          <span class="underline">Bigapp</span> go to the <br>next level
+        </h1>
         <a href="#" class="case-study-link">View Case Study <span><img src="img/arrow.png" alt="arrow" class="arrow-icon"></span>
         </a>
       </div>
+
       <div class="image-content-1">
         <img src="img/Mobile-App-Placeholder-2.png" alt="Bigapp mobile app mockup" class="phone-mockup" />
       </div>
       <div class="testimonial-content">
-        <p class="testimonial-quote">
+        <p class="testimonial-quote quote-mobile">
           "Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque faucibus."
         </p>
         <div class="testimonial-author">
